@@ -15,70 +15,18 @@
     font-style: normal;
 }
 
-/* esto sería el reseteo de valores! junto con los margenes d la página en sí */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* principalmente elementos modificados intencionados inicialmente en el index */
-
 body {
     background-color: #999281;
     font-family: "EB Garamond", serif;
     margin: 0 30px;
 }
 
-/* esto es el header */
-nav {
-    background-color: #46363F;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
+.logotop {
+    img-fluid w-100 h-100
 }
 
-.menuul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.menua {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 20px;
-    font-size: 20px;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* esto ya es el contenido */
-main .hayden {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 5px;
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-    float: left;
-    margin-right: 20px;
-    height: auto;
-}
-
-main .ethelcainmoño {
-    float: right;
-    width: 80px;
-    height: 80px;
-    margin-left: 20px;
-    height: auto;
-}
 
 main .texto {
     font-size: 18px;
@@ -93,7 +41,7 @@ main .texto {
 }
 
 h1 {
-    padding: 20px;
+    padding: 3rem;
     font-size: 30px;
     color: #000000;
     font-family: "UnifrakturMaguntia", serif;
@@ -103,9 +51,9 @@ h1 {
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 2rem;
     color: #000000;
-    font-family: "EB Garamond", serif;
+    font-family: "UnifrakturMaguntia", serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
@@ -123,33 +71,22 @@ h3 {
 }
 
 h4 {
-    font-size: 12px;
+    font-size: 1rem;
     color: #ffffff;
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: left;
-    padding: 0px;
-}
-
-.etherdef {
-    margin: 5px 20px 20px 20px;
-}
-
-p {
-    font-size: 18px;
-    color: #000000;
     line-height: 1.2; /* espaciado entre lineas */
     font-family: "EB Garamond", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.discos {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+
+p {
+    font-size: 1rem;
+    color: #000000;
+    line-height: 1.2; /* espaciado entre lineas */
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 a {
@@ -161,6 +98,16 @@ a {
     font-family: "UnifrakturMaguntia", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.box {
+    padding: 10px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 100px;
+
 }
 
 .discografía {
@@ -176,119 +123,31 @@ a {
 
 /* Acá empiezan los estilos de las páginas de los discos */
 
-.tracklistinbred {
-    background-image: url(../assets/images/portadas/ib.jpg); brightness(80%);
-    width: 736px; 
-    height: 736px;   
-    align-content: center;
-    font-size: 18px;
-    color: #000000;
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    padding: 20px;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-position: center;
-}
-
-    .tracklistgoldenage {
-        background-image: url(../assets/images/portadas/ge.jpg); brightness(80%);
-        width: 736px; 
-        height: 736px;   
-        align-content: center;
-        font-size: 18px;
-        color: #000000;
-        font-family: "EB Garamond", serif;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-        padding: 20px;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        background-position: center;
-    }
-}
-
-.tracklistpreachersdaughter {
-    background-image: url(../assets/images/portadas/ge.jpg); brightness(80%);
-width: 736px; 
-height: 736px;   
-align-content: center;
-font-size: 18px;
-color: #000000;
-font-family: "EB Garamond", serif;
-font-weight: 400;
-font-style: normal;
-text-align: center;
-padding: 20px;
-
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 0 auto;
-background-position: center;
-}  
 
 /* esto claramente es el footer */
 
-
 footer {
-   height: fit-content;
-    background-color: #000000;
-    text-decoration-color: #ffffff;
-   display: grid;
-   grid template-columns: 1fr 1fr;
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-   grid-gap: 20px;  
+    background-color: #999281;
+.box { padding: 20px; font-size: 20px; }
+        .bg-1 { /* Gris claro */
+        .bg-2 {  color: white; } /* Marrón oscuro */
+        .bg-3 {  color: white; } /* Azul oscuro */
+        .bg-4 { color: white; text-align: center; } /* Rojo oscuro */
+        .bg-5  /* Gris claro */
+        
+        /* Estilos para alinear el texto */
+        .text-left { text-align: left; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
 
-}
+        /* Flexbox para centrar verticalmente */
+        .d-flex-center { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100%; 
+        }
+    }
 
-.poema {
-    width: 50%;
-    font-size: 12px;
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 20px;
-    text-align: center;
-}
-.preorder {
-    width: 50%;
-    align-content: rigth;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-font-size: 14px;    
-padding: 10px;
-    font-size: 15px;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-.footul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.foot {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10pxpx;
-    font-size: 15px;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 

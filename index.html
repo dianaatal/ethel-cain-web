@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
 
@@ -20,112 +21,146 @@
 
  <!-- <img src="./assets/images/bichito_coso.png" width="120" height="120" alt="ovejita malevola">  intenté integrar esta imagen en el medio del navbar y el divider superior que funciona como título de la web pero se me complicaba u.u -->
 
- <nav>
-    <ul class="menuul">
-        <li> <a class="menua" href="index.html"> inicio </a> </li>
-        <li> <a class="menua" href="pages/goldenage.html"> golden age </a> </li>
-        <li> <a class="menua" href="pages/inbred.html"> inbred </a> </li>
-        <li> <a class="menua" href="pages/preachersdaugther.html"> preachers daugther </a> </li>
-        <li> <a class="menua" href="pages/perverts.html"> perverts </a> </li>
-        <li> <a class="menua" href="pages/vinilos.html"> vinilos </a> </li>
 
-    </ul>
- </nav>
+<!-- el navbar fue cambiado con bootstrap. --> 
 
-    </header>
-    
-    <main>
-            <h1>cantante, compositora, productora discográfica y modelo</h1>
-            <div class="etherdef">
-            <h2> transexual, autista y bisexual</h2>
-            <h2> su música posee un estilo etéreo, inspirado en la música cristiana y los cantos gregorianos.</h2>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ethel Cain</a>
+      <img src="./assets/images/bichito_coso.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/goldenage.html">golden age</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/inbred.html">inbred</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/preachersdaugther.html">preaches daughter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/perverts.html">perverts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/vinilos.html">vinilos</a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+   
+  <div class="container mt-5">
+    <div class="box">
+        <div class="text-center fw-bold fs-3 p-3 border-bottom"> <h1>cantante, compositora, productora discográfica y modelo</h1>
         </div>
-    <div class="Hayden">
-            <img src="./assets/images/ethel cain como tal.png" alt="imagen de ethel cain con moños" width="300" height="300">
-        </div>
-        
-    <div class="texto">
-        <p> Hayden Anhedönia, nacida el 24 de marzo de 1998 en Tallahassee, Florida, es una artista estadounidense que creció en un entorno profundamente religioso en el sur de Estados Unidos.</p>
-        <p>En 2017, adoptó el nombre de Ethel Cain, inspirado en la cultura gótica sureña y la estética del "American Gothic". Su música comenzó a ganar notoriedad con mixtapes y EPs como Golden Age (2019) y Inbred (2021), antes de lanzar su álbum debut Preacher’s Daughter en 2022. Este álbum cuenta la trágica historia de Ethel, una joven atrapada en un entorno opresivo que la lleva a un destino desgarrador.</p>
-        
-        <p>Ethel Cain combina un sonido melancólico con una estética inspirada en la América rural, la iconografía religiosa y la cultura sureña. Sus videoclips y fotografías suelen mostrar paisajes desolados, casas antiguas y referencias visuales al cristianismo, reforzando su narrativa de opresión y tragedia.</p>
-        
-        <p> Desde joven, se sintió atraída por la música y las artes, aunque su estricta educación en una comunidad bautista conservadora limitó inicialmente su autoexpresión. A los 16 años, comenzó a cuestionar su educación religiosa y eventualmente dejó la iglesia. </p> 
-            
-        <p>Identificándose como trans, Hayden ha hablado abiertamente sobre su búsqueda de identidad y la lucha por reconciliar su pasado religioso con su vida personal y artística.</p>
-        
-        <p> Su sensibilidad creativa y su introspección han sido fundamentales en la construcción de su mundo artístico y su exploración emocional, marcando su vida tanto dentro como fuera del escenario.</p>  
-        
-        <p>Ella crea la mayor parte de su música sola. Escribe, produce y graba casi todo su material de manera independiente. Su álbum debut, Preacher’s Daughter (2022), fue autoproducido en su mayoría en su casa. Aunque ocasionalmente colabora con otros músicos, su sonido y visión artística son muy personales y autogestionadas.</p>
-    </div> 
-</main>
 
-        <section class="discografía">
-            <h1>discografía</h1>
-            
-            <ul class="discos">
-               
-                  <ol>  Golden Age (2019)</ol>
-
-                  <ol>   Inbred (2021)</ol>
-
-                  <ol>  Preacher's Daughter (2022)</ol>
-
-                  <ol>    Perverts (2025)</ol>
-
-                  <ol>   EP - Carpet Bed </ol>
+        <div class="row p-3">
+            <div class="col-md-4">
+                <div class="image-placeholder">  
+                  <img src="./assets/images/ethel cain como tal.png" alt="imagen de ethel cain con moños" width="300" height="300">
+                </div>
+            </div>
+            <div class="col-md-8 d-flex flex-column justify-content-center">
+                <div class="fw-bold fs-3"><h2> transexual, autista y bisexual</h2>
+                  <p> su música posee un estilo etéreo, inspirado en la música cristiana y los cantos gregorianos.</p>
+                  <p> su estética combina elementos de la cultura gótica sureña y la iconografía religiosa.</p>
+                  <p> su música y su imagen reflejan su lucha por la identidad y la autoexpresión.</p></div>
                 
+            </div>
+        </div>
 
-            </ul>
-         
+        <div class="p-3">
+            <p class="text-center">
+              Hayden Anhedönia, nacida el 24 de marzo de 1998 en Tallahassee, Florida, es una artista estadounidense que creció en un entorno profundamente religioso en el sur de Estados Unidos.</p>
+             <br> <p>En 2017, adoptó el nombre de Ethel Cain, inspirado en la cultura gótica sureña y la estética del "American Gothic". Su música comenzó a ganar notoriedad con mixtapes y EPs como Golden Age (2019) y Inbred (2021), antes de lanzar su álbum debut Preacher’s Daughter en 2022. Este álbum cuenta la trágica historia de Ethel, una joven atrapada en un entorno opresivo que la lleva a un destino desgarrador.</p>
+              
+              <br><p>Ethel Cain combina un sonido melancólico con una estética inspirada en la América rural, la iconografía religiosa y la cultura sureña. Sus videoclips y fotografías suelen mostrar paisajes desolados, casas antiguas y referencias visuales al cristianismo, reforzando su narrativa de opresión y tragedia.</p>
+              
+              <br><p> Desde joven, se sintió atraída por la música y las artes, aunque su estricta educación en una comunidad bautista conservadora limitó inicialmente su autoexpresión. A los 16 años, comenzó a cuestionar su educación religiosa y eventualmente dejó la iglesia. </p> 
+                
+              <br><p>Identificándose como trans, Hayden ha hablado abiertamente sobre su búsqueda de identidad y la lucha por reconciliar su pasado religioso con su vida personal y artística.</p>
+              
+              <br><p> Su sensibilidad creativa y su introspección han sido fundamentales en la construcción de su mundo artístico y su exploración emocional, marcando su vida tanto dentro como fuera del escenario.</p>  
+              
+              <br><p>Ella crea la mayor parte de su música sola. Escribe, produce y graba casi todo su material de manera independiente. Su álbum debut, Preacher’s Daughter (2022), fue autoproducido en su mayoría en su casa. Aunque ocasionalmente colabora con otros músicos, su sonido y visión artística son muy personales y autogestionadas.</p>
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bg-1 box d-flex-center text-left">
+                <p>benditas sean las hijas de cain, atadas al sufrimiento eterno arraigados a los pecados de sus padres, cometidos mucho antes de sus propias concepciones. <br>
+
+                    <br>benditas sean sus madres malditas, cansadas y enojadas esperando con sus respiraciones contenidas en un bote que nunca se volverá a mover. <br>
+                    
+                  <br>bendita seas tu, niña: que has sido prometida a mí por un hombre que solo puede sentir odio y desprecio hacia ti.<br>
+                    
+                  <br>No soy bueno ni malvado, simplemente soy, y he venido a tomar lo que es mío. <br>
+                    
+                  <br>Estaba ahí, en la oscuridad, cuando derramaste tu primer sangre.<br>
+                    
+                  <br>Estoy aquí ahora, incluso mientras huyes de mi todavía.<br>
+                    
+                  <br>Corre entonces, niña.<br>
+                    
+                  <br>No te puedes esconder de mí por siempre. 
+                    </p>
+            </div>
             
-        </section>
+            <div class="col-md-3 bg-2 box d-flex-center text-center">
+                <h2>discografía</h2>
+                
+                <ul>
+                   
+                      <ol>  Golden Age (2019)</ol>
+    
+                      <ol>   Inbred (2021)</ol>
+    
+                      <ol>  Preacher's Daughter (2022)</ol>
+    
+                      <ol>    Perverts (2025)</ol>
+    
+                      <ol>   EP - Carpet Bed </ol>
+                    
+    
+                </ul>
+             </div>
 
+            
+            <div class="col-md-3 bg-3 box d-flex-center text-right">
+            <!-- <p>TEXTO<br>TEXTO<br>TEXTO<br>TEXTO</p> -->
+            </div>
+        </div>
         
-    <footer>
-        <div class="poema">
-        <h4> ethel cain</h4>
-        <h4>benditas sean las hijas de cain, atadas al sufrimiento eterno arraigados a los pecados de sus padres, cometidos mucho antes de sus propias concepciones.</h4>
-        <h4>benditas sean sus madres malditas, cansadas y enojadas esperando con sus respiraciones contenidas en un bote que nunca se volverá a mover.</h4>  
-        <h4> bendita seas tu, niña: que has sido prometida a mí por un hombre que solo puede sentir odio y desprecio hacia ti.</h4>
-        <h4> No soy bueno ni malvado, simplemente soy, y he venido a tomar lo que es mío. </h4>     
-        <h4>Estaba ahí, en la oscuridad, cuando derramaste tu primer sangre.</h4>      
-        <h4> Estoy aquí ahora, incluso mientras huyes de mi todavía.</h4>       
-        <h4> Corre entonces, niña.</h4>      
-        <h4> No te puedes esconder de mí por siempre. </h4>
+        <!-- Segunda fila (4) -->
+        <div class="row">
+            <div class="col-12 bg-4 box d-flex-center">
+                    <h2>Pre-Orden de Preacher's daughter</h2>
+            
+                    <form action="">
+                    <input type="email" placeholder="Correo electrónico" id="preordenar">
+                    <input type="submit" value="Enviar" id="enviarpreorder">
+                    <a href="https://ethelcain.ffm.to/preachersdaughtervinyl"></a>
+                    </form>
+            </div>
         </div>
 
-        <div>
-            <h3>Contenido</h3>
-            <ul class="footul">
-                <a class="foot" href="index.html"> inicio </a> </li>
-                 <a class="foot" href="pages/goldenage.html"> golden age </a> </ol>
-                 <a class="foot" href="pages/inbred.html"> inbred </a> </ol>
-                 <a class="foot" href="pages/preachersdaugther.html"> preachers daugther </a> </ol>
-                <a class="foot" href="pages/perverts.html"> perverts </a> </ol>
-                <a class="foot" href="pages/vinilos.html"> vinilos </a> </ol>
-            </ul>
+        <!-- Tercera fila (5) -->
+        <div class="row">
+            <div class="col-12 bg-5 box d-flex-center text-center">
+                <p> <br> © 2025, Ethel Cain ♡ <br> </p>
+            </div>
         </div>
-        <div>
-            <h3>Medios</h3>
-            <ul>
+    </div>
 
-            </ul>
-
-        </div>
-        <div class="preorder">
-            <h3>Pre-Orden de Preacher's daughter</h3>
-
-            <form action="">
-                <input type="email" placeholder="Correo electrónico" id="preordenar">
-                <input type="submit" value="Enviar" id="enviarpreorder">
-                <a href="https://ethelcain.ffm.to/preachersdaughtervinyl"></a>
-            </form>
-        </div>
-        <div><hr> 
-            <h1 style="color: white">© 2025, Ethel Cain ♡</h1> 
-            </div> 
-    </footer>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</footer>
 </html>

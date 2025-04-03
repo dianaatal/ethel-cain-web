@@ -1,201 +1,25 @@
+@charset "UTF-8";
 /* intento de port de fuentes de google fonts a css */
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url(../sass/_variables.scss);
+@import url(../sass/_reset.scss);
+@import url(../sass/_generales.scss);
+@import url(../sass/_index.scss);
+@import url(../sass/_footer.scss);
+@import url(../sass/_tracklist.scss);
 /* acá me embolé con las fuentes jeje */
 .EB-Garamond-regular {
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .unifrakturmaguntia-regular {
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "UnifrakturMaguntia", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
 
 /* principalmente elementos modificados intencionados inicialmente en el index */
-body {
-    background-color: #999281;
-    font-family: "EB Garamond", serif;
-    margin: 0 30px;
-}
-
-.logotop {
-    width: auto;}
-
-
-main .texto {
-    font-size: 18px;
-    color: #000000;
-    width: 448px;
-    overflow: hidden;
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    padding: 2rem;
-    font-size: 30px;
-    color: #000000;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    color: #000000;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    padding: 0px;
-}
-
-h3 {
-    font-size: 13px;
-    color: #ffffff;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 200;
-    font-style: normal;
-    text-align: center;
-    padding: 0px;
-}
-
-h4 {
-    font-size: 1rem;
-    color: #ffffff;
-    line-height: 1.2; /* espaciado entre lineas */
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-p {
-    font-size: 1rem;
-    color: #000000;
-    line-height: 1.2; /* espaciado entre lineas */
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 40px;
-    font-size: 20px;
-    font-family: "UnifrakturMaguntia", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.ul {
-    padding: 20px;
-    list-style: none; /* Elimina los puntos de la lista */
-    margin: 0; /* Elimina el margen por defecto */
-    display: flex; /* Utiliza flexbox para alinear los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-    justify-content: center; /* Centra los elementos horizontalmente */
-}
-
-.ol {
-    padding: 20px;
-    list-style: none; /* Elimina los puntos de la lista */
-    margin: 0; /* Elimina el margen por defecto */
-    display: flex; /* Utiliza flexbox para alinear los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-    justify-content: center; /* Centra los elementos horizontalmente */
-}
-
-.box {
-    padding: 20px;
-    list-style: 1px solid #000000;
-}
-
-.container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Makes the content vertical */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    overflow: hidden;
-    
-}
-
-.image-placeholder {
-    padding: 20px;
-    width: 100%;
-    height: 100px;
-
-}
-
-.discografía {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#46363F), to(#000000));
-    font-size: 18px;
-    color: #000000;
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    padding: 20px;
-}
-
-.tracklist {
-    border: #000000 solid 1px;
-    padding: 20px;
-    font-size: 1rem;
-    background-color: #999281;
-    color: #000000;
-    width: 190px;
-    height: 320px;
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Makes the content vertical */
-    align-items: center; /* Centers items horizontally */
-    justify-content: center; /* Centers items vertically */
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-/* Acá empiezan los estilos de las páginas de los discos */
-
-
-/* esto claramente es el footer */
-
-footer {
-    background-color: #999281;
-.box { padding: 20px; font-size: 1rem; }
-        .bg-1 { /* Gris claro */
-        .bg-2 {  color: white; } /* Marrón oscuro */
-        .bg-3 {  color: white; } /* Azul oscuro */
-        .bg-4 { color: white; text-align: center; } /* Rojo oscuro */
-        .bg-5  /* Gris claro */
-        
-        /* Estilos para alinear el texto */
-        .text-left { text-align: left; }
-        .text-center { text-align: center; }
-        .text-right { text-align: right; }
-
-        /* Flexbox para centrar verticalmente */
-        .d-flex-center { 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            height: 100%; 
-        }
-    }}
-
-
-
-/* Acá termina el footer */
+/* Acá termina el footer *//*# sourceMappingURL=estilos.css.map */

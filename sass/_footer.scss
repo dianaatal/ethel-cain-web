@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url("../sass/_generales.scss");
+@import url("../sass/_variables.scss");
+@import url("../sass/estilos.scss");
+
+footer {
+    background-color: $color-barro;
+.box { padding: 20px; font-size: 1rem; }
+        .bg-1 { /* Gris claro */
+        .bg-2 {  color: white; } /* Marrón oscuro */
+        .bg-3 {  color: white; } /* Azul oscuro */
+        .bg-4 { color: white; text-align: center; } /* Rojo oscuro */
+        .bg-5  /* Gris claro */
+        
+        /* Estilos para alinear el texto */
+        .text-left { text-align: left; }
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+
+        /* Flexbox para centrar verticalmente */
+        .d-flex-center { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100%; 
+        }
+    }}
+
+
+
+/* Acá termina el footer */

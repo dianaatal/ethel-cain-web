@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import '../sass/_variables.scss';
+@import url estilos.scss;
+
+body {
+    background-color: $color-barro;
+    font-family: "EB Garamond", serif;
+    margin: 0 30px;
+}
+h1 {
+    padding: 2rem;
+    font-size: 30px;
+    color: $color-oscuro;
+    ;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: $color-oscuro;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 0px;
+}
+
+h3 {
+    font-size: 13px;
+    color: #ffffff;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    padding: 0px;
+}
+
+h4 {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.2; /* espaciado entre lineas */
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+p {
+    font-size: 1rem;
+    color: $color-oscuro;
+    line-height: 1.2; /* espaciado entre lineas */
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 40px;
+    font-size: 20px;
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ul {
+    padding: 20px;
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.ol {
+    padding: 20px;
+    list-style: none; /* Elimina los puntos de la lista */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.box {
+    padding: 20px;
+    list-style: 1px solid $color-oscuro; 
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Makes the content vertical */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    overflow: hidden;
+    
+}
+
+.image-placeholder {
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+
+}
